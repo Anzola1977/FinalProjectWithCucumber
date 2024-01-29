@@ -3,7 +3,6 @@ package com.example.steps;
 import com.example.pages.MainPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.Keys;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -24,12 +23,6 @@ public class CreateTaskSteps {
     @When("user clicks in the task input field")
     public void user_clicks_in_the_task_input_field() {
         new MainPage().newTaskInput.click();
-    }
-
-    @When("enters task {string} and presses Enter key")
-    public void user_enters_task(String string) {
-        MainPage mainPage = new MainPage();
-        mainPage.newTaskInput.sendKeys(string, Keys.ENTER);
     }
 
     @When("user clicks the submit button {int} times")
