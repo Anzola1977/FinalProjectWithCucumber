@@ -94,7 +94,7 @@
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools-v120</artifactId>
+            <artifactId>selenium-devtools-v121</artifactId>
             <version>${seleniumhq_selenium.version}</version>
         </dependency>
         <dependency>
