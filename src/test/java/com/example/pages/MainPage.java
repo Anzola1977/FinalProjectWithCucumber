@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class MainPage extends BasePage{
-    public MainPage(){
+public class MainPage extends BasePage {
+    public MainPage() {
     }
 
     @FindBy(xpath = "//*[@class='list-stats']//span")
@@ -21,6 +21,9 @@ public class MainPage extends BasePage{
     @FindBy(xpath = "//*[@class='todo']")
     public List<WebElement> listOfTasks;
 
+    @FindBy(xpath = "//li[contains(@class, 'todo')]")
+    public WebElement editTask;
+
     @FindBy(xpath = "//*[@class='icon-check']")
     public WebElement iconCheck;
 
@@ -33,8 +36,8 @@ public class MainPage extends BasePage{
     @FindBy(xpath = "//*[@class='todo-label completed']")
     public WebElement taskCompleted;
 
-//    @FindBy(xpath = "//*[@class='icon-trash']")
-//    public WebElement iconTrash;
+    @FindBy(xpath = "//*[@class='icon-trash']")
+    public WebElement iconTrash;
 
     @FindBy(xpath = "//*[@class='clear-all-btn']")
     public WebElement deleteButton;

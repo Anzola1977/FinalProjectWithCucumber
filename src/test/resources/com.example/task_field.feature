@@ -1,6 +1,13 @@
 Feature: Task field functionality
 
   @positive
+  Scenario: Checking task field clickability
+    Given user enter main page
+    And enters task "write a program" and presses Enter key
+    When user clicks this task
+    Then the task field changes color to "lightgoldenrodyellow" and trash icon appears
+
+  @positive
   Scenario: Checking the ability to change the task
     Given user enter main page
     And enters task "write a program" and presses Enter key
@@ -46,11 +53,4 @@ Feature: Task field functionality
       | ein Programm schreiben |
       | write a program        |
 
-#  @negative
-#  Scenario: task field is not working correctly with empty task
-#    Given user enter main page
-#    When user clicks in the task input field
-#    And enters task "" and presses Enter key
-#    Then user's task is added to his task list last
-#    And this user task is not clickable
 

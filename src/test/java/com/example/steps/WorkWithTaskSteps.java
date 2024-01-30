@@ -1,14 +1,14 @@
 package com.example.steps;
 
-import com.example.context.Context;
 import com.example.pages.MainPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.Color;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class WorkWithTaskSteps {
 
@@ -69,14 +69,19 @@ public class WorkWithTaskSteps {
         new MainPage().deleteButton.click();
     }
 
-    @Then("a marked task is deleted")
+    @Then("a task is deleted")
     public void aMarkedTaskIsDeleted() {
         assertTrue(new MainPage().listOfTasks.isEmpty());
     }
 
-//    @And("this user task is not clickable")
-//    public void thisUserTaskIsNotClickable() {
-////        new MainPage().listOfTasks.getFirst().click();
-//        assertFalse(new MainPage().taskFieldInput.click());
-//    }
+    @Then("the task field changes color to {string} and trash icon appears")
+    public void theTaskFieldChangesColor(String color) {
+        assertTrue(new MainPage().iconTrash.isDisplayed());
+        assertEquals(Color.fromString(color), Color.fromString(new MainPage().editTask.getCssValue("background-color")));
+    }
+
+    @And("clicks a trash icon in the task field")
+    public void clicksATrashIconInTheTaskField() {
+        new MainPage().iconTrash.click();
+    }
 }
