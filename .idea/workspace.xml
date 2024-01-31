@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="436c803b-f5f4-4197-a629-cfe23bbc4255" name="Changes" comment="Commit with WorkWithTaskSteps and new SeleniumDriver">
+    <list default="true" id="436c803b-f5f4-4197-a629-cfe23bbc4255" name="Changes" comment="Commit first site is finished">
+      <change beforePath="$PROJECT_DIR$/.allure/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/history-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/.allure/history/retry-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/CommonSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/CommonSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/CreateTaskSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/CreateTaskSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/DeleteTaskSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/DeleteTaskSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/WorkWithTaskSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/WorkWithTaskSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com.example/task_delete.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com.example/task_delete.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com.example/task_field.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com.example/task_field.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,36 +44,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Feature: task_field.executor": "Run",
-    "Cucumber Java.Feature: task_input_field.executor": "Run",
-    "Cucumber Java.Scenario: Checking availability of notice (1).executor": "Run",
-    "Cucumber Java.Scenario: Checking availability of notice.executor": "Run",
-    "Cucumber Java.Scenario: Checking task field clickability.executor": "Run",
-    "Cucumber Java.Scenario: Checking the ability to change the task.executor": "Run",
-    "Cucumber Java.Scenario: Checking the task counter.executor": "Run",
-    "Cucumber Java.Scenario: Deleting a task using the trash icon.executor": "Run",
-    "Cucumber Java.Scenario: Input scenarios with Enter key.executor": "Run",
-    "Cucumber Java.Scenario: Input scenarios with submit button (1).executor": "Run",
-    "Cucumber Java.Scenario: Input scenarios with submit button.executor": "Run",
-    "Cucumber Java.Scenario: Testing the ability to delete a marked task.executor": "Run",
-    "Cucumber Java.Scenario: Testing the ability to mark a task as completed.executor": "Run",
-    "Cucumber Java.Scenario: The task input field is not available for input.executor": "Run",
-    "Cucumber Java.Scenario: The text color of previously marked tasks is displayed incorrectly.executor": "Run",
-    "Cucumber Java.Scenario: task field is not working correctly with empty task.executor": "Run",
-    "JUnit.RunCucumberTest.executor": "Run",
-    "JUnit.RunCucumberTests.executor": "Run",
-    "Maven.FinalProjectWithCucumber [clean].executor": "Run",
-    "Maven.FinalProjectWithCucumber [verify].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/zolaa/IdeaProjects/FinalProjectWithCucumber/src/test/java/com/example/steps"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: task_field.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: task_input_field.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Checking availability of notice (1).executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Checking availability of notice.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Checking task field clickability.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Checking the ability to change the task.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Checking the task counter.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Deleting a task using the trash icon.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Input scenarios with Enter key.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Input scenarios with submit button (1).executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Input scenarios with submit button.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Testing the ability to delete a marked task.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Testing the ability to mark a task as completed.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: The task input field is not available for input.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: The text color of previously marked tasks is displayed incorrectly.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: task field is not working correctly with empty task.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RunCucumberTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RunCucumberTests.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.FinalProjectWithCucumber [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.FinalProjectWithCucumber [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/zolaa/Downloads/FinalProjectWithCucumber2&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="JUnit.RunCucumberTest">
     <configuration name="Feature: task_field" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/com.example/task_field.feature" />
@@ -165,9 +170,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RunCucumberTest" />
         <item itemvalue="Cucumber Java.Scenario: Deleting a task using the trash icon" />
         <item itemvalue="Cucumber Java.Scenario: Checking task field clickability" />
-        <item itemvalue="JUnit.RunCucumberTest" />
         <item itemvalue="Cucumber Java.Scenario: Testing the ability to delete a marked task" />
         <item itemvalue="Cucumber Java.Feature: task_field" />
       </list>
@@ -214,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706553814606</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit first site is finished">
+      <option name="closed" value="true" />
+      <created>1706611285557</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706611285557</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,6 +245,7 @@
     <MESSAGE value="Commit with CreateTaskSteps" />
     <MESSAGE value="Commit with WorkWithTaskSteps" />
     <MESSAGE value="Commit with WorkWithTaskSteps and new SeleniumDriver" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit with WorkWithTaskSteps and new SeleniumDriver" />
+    <MESSAGE value="Commit first site is finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit first site is finished" />
   </component>
 </project>

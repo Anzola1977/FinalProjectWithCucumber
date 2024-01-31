@@ -25,11 +25,6 @@ public class WorkWithTaskSteps {
         assertEquals(string, new MainPage().taskFieldInput.getText());
     }
 
-    @When("user clicks icon button")
-    public void userClicksIconButton() {
-        new MainPage().iconCheck.click();
-    }
-
     @Then("a checkmark appears")
     public void aCheckmarkAppears() {
         assertTrue(new MainPage().iconCheckTaskCompleted.isDisplayed());
@@ -38,20 +33,6 @@ public class WorkWithTaskSteps {
     @And("the text color changes to gray and crossed out")
     public void theTextColorChangesToGrayAndCrossedOut() {
         assertTrue(new MainPage().taskCompleted.isDisplayed());
-    }
-
-    @And("user enters tasks {string} and clicks submit button")
-    public void userEntersTasksAndClicksSubmitButton(String tasks) {
-        MainPage mainPage = new MainPage();
-        mainPage.newTaskInput.sendKeys(tasks);
-        mainPage.submitButton.click();
-    }
-
-    @And("user clicks icon button in all tasks")
-    public void clicksIconButtonInAllTasks() {
-        for (int i = 0; i < new MainPage().listOfTasks.size(); i++) {
-            new MainPage().iconCheck.click();
-        }
     }
 
     @Then("the text color of previously marked tasks becomes black and is not crossed out")
@@ -64,24 +45,9 @@ public class WorkWithTaskSteps {
         assertEquals(String.valueOf(new MainPage().listOfTasks.size()), new MainPage().counter.getText());
     }
 
-    @And("clicks clear button")
-    public void clicksClearButton() {
-        new MainPage().deleteButton.click();
-    }
-
-    @Then("a task is deleted")
-    public void aMarkedTaskIsDeleted() {
-        assertTrue(new MainPage().listOfTasks.isEmpty());
-    }
-
     @Then("the task field changes color to {string} and trash icon appears")
     public void theTaskFieldChangesColor(String color) {
         assertTrue(new MainPage().iconTrash.isDisplayed());
         assertEquals(Color.fromString(color), Color.fromString(new MainPage().editTask.getCssValue("background-color")));
-    }
-
-    @And("clicks a trash icon in the task field")
-    public void clicksATrashIconInTheTaskField() {
-        new MainPage().iconTrash.click();
     }
 }

@@ -15,16 +15,6 @@ public class CreateTaskSteps {
         mainPage.newTaskInput.sendKeys(string);
     }
 
-    @When("clicks submit button")
-    public void clicks_submit_button() {
-        new MainPage().submitButton.click();
-    }
-
-    @When("user clicks in the task input field")
-    public void user_clicks_in_the_task_input_field() {
-        new MainPage().newTaskInput.click();
-    }
-
     @When("user clicks the submit button {int} times")
     public void user_clicks_the_submit_button_times(Integer times) {
         MainPage mainPage = new MainPage();
