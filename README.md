@@ -1,1 +1,1 @@
-## Hiermit stelle ich meine Selenium-Tests mit der Nutzung des Cucumber Frameworks (BDD) und meinen End-to-End-Systemtest dar. Hier demonstriere ich die Arbeit mit den Technologien von Java, Selenium, Cucumber, JUnit, Maven, Allure, Logback.
+## Hiermit stelle ich meine Selenium-Tests mit der Nutzung des Cucumber Frameworks (BDD) dar. Hier demonstriere ich die Arbeit mit den Technologien von Java, Selenium, Cucumber, JUnit, Maven, Allure, Logback.
