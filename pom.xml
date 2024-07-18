@@ -15,7 +15,7 @@
         <aspectj.version>1.9.21</aspectj.version>
         <allure.version>2.25.0</allure.version>
         <bonigarcia_webdrivermanager.version>5.6.3</bonigarcia_webdrivermanager.version>
-        <seleniumhq_selenium.version>4.17.0</seleniumhq_selenium.version>
+        <seleniumhq_selenium.version>4.22.0</seleniumhq_selenium.version>
         <junit_jupiter.version>5.10.1</junit_jupiter.version>
         <cucumber.version>7.15.0</cucumber.version>
         <logback.version>1.4.14</logback.version>
@@ -94,7 +94,7 @@
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools-v121</artifactId>
+            <artifactId>selenium-devtools-v126</artifactId>
             <version>${seleniumhq_selenium.version}</version>
         </dependency>
         <dependency>
